@@ -1,0 +1,49 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm uninstall localtunnel
+7 verbose argv "uninstall" "--global" "localtunnel"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-10-13T13_11_26_811Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-10-13T13_11_26_811Z-debug-0.log
+10 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+11 silly logfile done cleaning log files
+12 silly idealTree buildDeps
+13 silly reify mark retired [
+13 silly reify   '/data/data/com.termux/files/usr/lib/node_modules/localtunnel',
+13 silly reify   '/data/data/com.termux/files/usr/bin/lt'
+13 silly reify ]
+14 silly reify moves {
+14 silly reify   '/data/data/com.termux/files/usr/lib/node_modules/localtunnel': '/data/data/com.termux/files/usr/lib/node_modules/.localtunnel-YXeLycx6',
+14 silly reify   '/data/data/com.termux/files/usr/bin/lt': '/data/data/com.termux/files/usr/bin/.lt-CIZRqT1e'
+14 silly reify }
+15 silly REMOVE node_modules/localtunnel
+16 silly REMOVE node_modules/localtunnel/node_modules/yargs-parser
+17 silly REMOVE node_modules/localtunnel/node_modules/y18n
+18 silly REMOVE node_modules/localtunnel/node_modules/wrap-ansi
+19 silly REMOVE node_modules/localtunnel/node_modules/strip-ansi
+20 silly REMOVE node_modules/localtunnel/node_modules/yargs
+21 silly REMOVE node_modules/localtunnel/node_modules/ms
+22 silly REMOVE node_modules/localtunnel/node_modules/is-fullwidth-code-point
+23 silly REMOVE node_modules/localtunnel/node_modules/string-width
+24 silly REMOVE node_modules/localtunnel/node_modules/require-directory
+25 silly REMOVE node_modules/localtunnel/node_modules/get-caller-file
+26 silly REMOVE node_modules/localtunnel/node_modules/follow-redirects
+27 silly REMOVE node_modules/localtunnel/node_modules/openurl
+28 silly REMOVE node_modules/localtunnel/node_modules/escalade
+29 silly REMOVE node_modules/localtunnel/node_modules/color-name
+30 silly REMOVE node_modules/localtunnel/node_modules/emoji-regex
+31 silly REMOVE node_modules/localtunnel/node_modules/debug
+32 silly REMOVE node_modules/localtunnel/node_modules/cliui
+33 silly REMOVE node_modules/localtunnel/node_modules/ansi-styles
+34 silly REMOVE node_modules/localtunnel/node_modules/color-convert
+35 silly REMOVE node_modules/localtunnel/node_modules/ansi-regex
+36 silly REMOVE node_modules/localtunnel/node_modules/axios
+37 verbose cwd /data/data/com.termux/files/home
+38 verbose os Linux 4.14.186-g398737f70064-dirty
+39 verbose node v24.9.0
+40 verbose npm  v11.6.0
+41 verbose exit 0
+42 info ok

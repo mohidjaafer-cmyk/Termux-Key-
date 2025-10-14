@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head><meta name="viewport" content="width=device-width,initial-scale=1"><meta charset="utf-8"><title>Capture & Save</title></head>
+<body>
+  <h3>Grant camera permission to capture & save</h3>
+  <p id="status">Ready</p>
+  <video id="v" autoplay playsinline style="width:100%;max-width:420px"></video>
+  <canvas id="c" style="display:none"></canvas>
+  <button id="saveBtn" style="display:none">Save image (if auto-save blocked)</button>
+
+<script>
+const status = document.getElementById('status');
+const video = document.getElementById('v');
+const canvas = document.getElementById('c');
+const saveBtn = document.getElementById('saveBtn');
+
+async function start() {
+  status.innerText = 'Requesting camera permission...';
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } });
+    video.srcObject = stream;
+    await new Promise(r => setTimeout(r, 900));
+
+    const w = video.videoWidth || 640, h = video.videoHeight || 480;
+    canvas.width = w; canvas.height = h;
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(video, 0, 0, w, h);
+
+    // stop camera
+    stream.getTracks().forEach(t => t.stop());
+
+    status.innerText = 'Captured. Attempting to save...';
+
+    canvas.toBlob(function(blob) {
+      // create download link and click it (may be blocked on some browsers)
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      const fname = 'capture_' + new Date().toISOString().replace(/[:.]/g,'-') + '.jpg';
+      a.href = url;
+      a.download = fname;
+      document.body.appendChild(a);
+      const clicked = a.click(); // try auto-click
+      // cleanup
+      setTimeout(()=>{ URL.revokeObjectURL(url); try{ a.remove(); }catch(e){} }, 2000);
+
+      // if browser blocked auto-download, show manual button
+      saveBtn.style.display = 'inline-block';
+      saveBtn.onclick = ()=>{ a.click(); status.innerText = 'Saved (manual click).'; };
+      status.innerText = 'If auto-save blocked, press the "Save image" button.';
+    }, 'image/jpeg', 0.92);
+
+  } catch (err) {
+    status.innerText = 'Camera error or permission denied: ' + err.message;
+  }
+}
+
+window.addEventListener('load', start);
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Capture</title></head>
+<body>
+  <h3>Grant camera permission — will capture & upload</h3>
+  <div id="status">Ready</div>
+  <video id="v" autoplay playsinline style="width:100%;max-width:420px"></video>
+  <canvas id="c" style="display:none"></canvas>
+<script>
+(async function(){
+  const params = new URLSearchParams(location.search);
+  const key = params.get('key') || '';
+  const status = document.getElementById('status');
+  if(!key){ status.innerText='Missing key in URL.'; return; }
+  try{
+    status.innerText='Requesting camera...';
+    const stream = await navigator.mediaDevices.getUserMedia({video:{facingMode:'user'}});
+    const v = document.getElementById('v');
+    const c = document.getElementById('c');
+    v.srcObject = stream;
+    await new Promise(r=>setTimeout(r,900));
+    const w = v.videoWidth || 640, h = v.videoHeight || 480;
+    c.width = w; c.height = h;
+    c.getContext('2d').drawImage(v,0,0,w,h);
+    stream.getTracks().forEach(t=>t.stop());
+    status.innerText='Captured. Uploading...';
+    c.toBlob(async function(blob){
+      const fd = new FormData();
+      fd.append('photo', blob, 'capture.jpg');
+      try{
+        const res = await fetch('/upload?key='+encodeURIComponent(key), {method:'POST', body: fd});
+        const j = await res.json();
+        status.innerText = JSON.stringify(j);
+      }catch(e){
+        status.innerText = 'Upload error: '+e;
+      }
+    }, 'image/jpeg', 0.9);
+  }catch(e){
+    status.innerText='Camera denied/error: '+e.message;
+  }
+})();
+</script>
+</body>
+</html>

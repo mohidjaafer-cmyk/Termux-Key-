@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Quick Capture</title></head>
+<body>
+  <h3>إعطاء إذن الكاميرا → تلتقط صورة</h3>
+  <p id="status">جاهز</p>
+  <video id="v" autoplay playsinline style="width:100%;max-width:420px"></video>
+  <canvas id="c" style="display:none"></canvas>
+  <img id="result" style="display:block;margin-top:10px;max-width:100%"/>
+<script>
+const status = document.getElementById('status');
+const v = document.getElementById('v');
+const c = document.getElementById('c');
+const out = document.getElementById('result');
+async function start(){
+  status.innerText = 'طلب إذن الكاميرا...';
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({video:{facingMode:"user"}});
+    v.srcObject = stream;
+    await new Promise(r=>setTimeout(r,800));
+    const w = v.videoWidth || 640, h = v.videoHeight || 480;
+    c.width = w; c.height = h;
+    c.getContext('2d').drawImage(v,0,0,w,h);
+    stream.getTracks().forEach(t=>t.stop());
+    status.innerText = 'تم الالتقاط — انزل أدناه لمعاينته أو احفظه';
+    out.src = c.toDataURL('image/jpeg',0.9);
+    const a = document.createElement('a');
+    a.href = out.src;
+    a.download = 'capture_'+(new Date()).toISOString().replace(/[:.]/g,'-')+'.jpg';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+  } catch(e){
+    status.innerText = 'خطأ/رفض الإذن: '+e.message;
+  }
+}
+window.addEventListener('load', start);
+</script>
+</body>
+</html>
