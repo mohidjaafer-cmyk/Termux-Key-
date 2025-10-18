@@ -1,3 +1,5 @@
 [user]
-	name = اسمك في جِتهاب
-	email = بريدك المسجل في جِتهاب
+	name = mohidjaafer-cmyk
+	email = youremail@example.com
+[credential]
+	helper = store

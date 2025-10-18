@@ -1,0 +1,106 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/crashbot/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm uninstall telegraf
+8 verbose argv "uninstall" "telegraf"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-10-16T00_55_41_569Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-10-16T00_55_41_569Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify mark retired [
+15 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/@telegraf/types'
+15 silly reify ]
+16 silly reify mark retired [
+16 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/abort-controller'
+16 silly reify ]
+17 silly reify mark retired [
+17 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-alloc'
+17 silly reify ]
+18 silly reify mark retired [
+18 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-alloc-unsafe'
+18 silly reify ]
+19 silly reify mark retired [
+19 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-fill'
+19 silly reify ]
+20 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/debug' ]
+21 silly reify mark retired [
+21 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/event-target-shim'
+21 silly reify ]
+22 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/mri' ]
+23 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/ms' ]
+24 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/node-fetch' ]
+25 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/p-timeout' ]
+26 silly reify mark retired [
+26 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/safe-compare'
+26 silly reify ]
+27 silly reify mark retired [
+27 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/sandwich-stream'
+27 silly reify ]
+28 silly reify mark retired [
+28 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/telegraf',
+28 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/.bin/telegraf'
+28 silly reify ]
+29 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/tr46' ]
+30 silly reify mark retired [
+30 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/webidl-conversions'
+30 silly reify ]
+31 silly reify mark retired [ '/data/data/com.termux/files/home/crashbot/node_modules/whatwg-url' ]
+32 silly reify moves {
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/@telegraf/types': '/data/data/com.termux/files/home/crashbot/node_modules/@telegraf/.types-uatXEsRM',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/abort-controller': '/data/data/com.termux/files/home/crashbot/node_modules/.abort-controller-ZzzziGkO',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-alloc': '/data/data/com.termux/files/home/crashbot/node_modules/.buffer-alloc-1Oz1JJUp',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-alloc-unsafe': '/data/data/com.termux/files/home/crashbot/node_modules/.buffer-alloc-unsafe-9yd5YqJM',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/buffer-fill': '/data/data/com.termux/files/home/crashbot/node_modules/.buffer-fill-GupbwLfN',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/debug': '/data/data/com.termux/files/home/crashbot/node_modules/.debug-xEVTfeZe',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/event-target-shim': '/data/data/com.termux/files/home/crashbot/node_modules/.event-target-shim-aD2llW76',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/mri': '/data/data/com.termux/files/home/crashbot/node_modules/.mri-OZRsHR1T',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/ms': '/data/data/com.termux/files/home/crashbot/node_modules/.ms-2T2r5fBQ',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/node-fetch': '/data/data/com.termux/files/home/crashbot/node_modules/.node-fetch-f2LyxSED',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/p-timeout': '/data/data/com.termux/files/home/crashbot/node_modules/.p-timeout-wntCFLgQ',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/safe-compare': '/data/data/com.termux/files/home/crashbot/node_modules/.safe-compare-BwRDTNJx',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/sandwich-stream': '/data/data/com.termux/files/home/crashbot/node_modules/.sandwich-stream-9loHbBvf',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/telegraf': '/data/data/com.termux/files/home/crashbot/node_modules/.telegraf-a3SrVgTi',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/.bin/telegraf': '/data/data/com.termux/files/home/crashbot/node_modules/.bin/.telegraf-5ijU5UUE',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/tr46': '/data/data/com.termux/files/home/crashbot/node_modules/.tr46-S94fjs9G',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/webidl-conversions': '/data/data/com.termux/files/home/crashbot/node_modules/.webidl-conversions-fAwdJIrC',
+32 silly reify   '/data/data/com.termux/files/home/crashbot/node_modules/whatwg-url': '/data/data/com.termux/files/home/crashbot/node_modules/.whatwg-url-I0B9quUg'
+32 silly reify }
+33 silly audit bulk request {
+33 silly audit   'graceful-fs': [ '4.2.11' ],
+33 silly audit   'is-promise': [ '2.2.2' ],
+33 silly audit   lodash: [ '4.17.21' ],
+33 silly audit   lowdb: [ '1.0.0' ],
+33 silly audit   pify: [ '3.0.0' ],
+33 silly audit   steno: [ '0.4.4' ]
+33 silly audit }
+34 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 856ms
+35 silly audit report {}
+36 silly REMOVE node_modules/whatwg-url
+37 silly REMOVE node_modules/webidl-conversions
+38 silly REMOVE node_modules/tr46
+39 silly REMOVE node_modules/telegraf
+40 silly REMOVE node_modules/sandwich-stream
+41 silly REMOVE node_modules/safe-compare
+42 silly REMOVE node_modules/p-timeout
+43 silly REMOVE node_modules/node-fetch
+44 silly REMOVE node_modules/ms
+45 silly REMOVE node_modules/mri
+46 silly REMOVE node_modules/event-target-shim
+47 silly REMOVE node_modules/debug
+48 silly REMOVE node_modules/buffer-fill
+49 silly REMOVE node_modules/buffer-alloc-unsafe
+50 silly REMOVE node_modules/buffer-alloc
+51 silly REMOVE node_modules/abort-controller
+52 silly REMOVE node_modules/@telegraf/types
+53 verbose cwd /data/data/com.termux/files/home/crashbot
+54 verbose os Linux 4.14.186-g398737f70064-dirty
+55 verbose node v24.9.0
+56 verbose npm  v11.6.0
+57 verbose exit 0
+58 info ok

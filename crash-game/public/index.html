@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crash Demo — Mr.JO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header><h1>Crash Demo — Mr.JO</h1></header>
+
+    <section class="panel">
+      <div class="row">
+        <div>الرصيد: <span id="balance">0.00</span> عملة افتراضية</div>
+        <div>الاسم:<input id="name" placeholder="اسمك" /></div>
+      </div>
+
+      <div class="round">
+        <div>المرحلة: <b id="phase">...</b></div>
+        <div>المضاعف الحالي: <b id="mult">1.00x</b></div>
+        <div id="timeleft"></div>
+      </div>
+
+      <div class="bet-area">
+        <input id="betAmt" type="number" min="0.1" step="0.1" placeholder="مبلغ الرهان" />
+        <button id="placeBtn">راهن</button>
+        <button id="cashBtn" disabled>سحب</button>
+      </div>
+
+      <div class="info">
+        <h4>المراهنات العامة</h4>
+        <ul id="bets"></ul>
+      </div>
+      <div class="log" id="log"></div>
+      <footer>هذه نسخة تجريبية — لا أموال حقيقية. كل شيء افتراضي.</footer>
+    </section>
+  </div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>

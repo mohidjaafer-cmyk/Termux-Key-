@@ -1,0 +1,59 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/crashbot/.npmrc
+5 silly config load:file:/data/data/com.termux/files/home/.npmrc
+6 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+7 verbose title npm install telegraf@4.12.2 lowdb@1.0.0
+8 verbose argv "install" "telegraf@4.12.2" "lowdb@1.0.0"
+9 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-10-16T00_59_34_480Z-
+10 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-10-16T00_59_34_480Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:1174405120 maxSize:293601280 maxEntrySize:146800640
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest lowdb@1.0.0
+16 silly packumentCache full:https://registry.npmjs.org/lowdb cache-miss
+17 http cache https://registry.npmjs.org/lowdb 109ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/lowdb set size:183709 disposed:false
+19 silly fetch manifest telegraf@4.12.2
+20 silly packumentCache full:https://registry.npmjs.org/telegraf cache-miss
+21 http cache https://registry.npmjs.org/telegraf 16ms (cache hit)
+22 silly packumentCache full:https://registry.npmjs.org/telegraf set size:1005543 disposed:false
+23 silly placeDep ROOT lowdb@1.0.0 REPLACE for: crashbot@1.0.0 want: 1.0.0
+24 silly placeDep ROOT telegraf@4.12.2 REPLACE for: crashbot@1.0.0 want: 4.12.2
+25 silly reify moves {}
+26 silly audit bulk request {
+26 silly audit   'abort-controller': [ '3.0.0' ],
+26 silly audit   'buffer-alloc': [ '1.2.0' ],
+26 silly audit   'buffer-alloc-unsafe': [ '1.1.0' ],
+26 silly audit   'buffer-fill': [ '1.0.0' ],
+26 silly audit   debug: [ '4.4.3' ],
+26 silly audit   'event-target-shim': [ '5.0.1' ],
+26 silly audit   'graceful-fs': [ '4.2.11' ],
+26 silly audit   'is-promise': [ '2.2.2' ],
+26 silly audit   lodash: [ '4.17.21' ],
+26 silly audit   mri: [ '1.2.0' ],
+26 silly audit   ms: [ '2.1.3' ],
+26 silly audit   'node-fetch': [ '2.7.0' ],
+26 silly audit   'p-timeout': [ '4.1.0' ],
+26 silly audit   pify: [ '3.0.0' ],
+26 silly audit   'safe-compare': [ '1.1.4' ],
+26 silly audit   'sandwich-stream': [ '2.0.2' ],
+26 silly audit   steno: [ '0.4.4' ],
+26 silly audit   tr46: [ '0.0.3' ],
+26 silly audit   typegram: [ '4.3.0' ],
+26 silly audit   'webidl-conversions': [ '3.0.1' ],
+26 silly audit   'whatwg-url': [ '5.0.0' ],
+26 silly audit   lowdb: [ '1.0.0' ],
+26 silly audit   telegraf: [ '4.12.2' ]
+26 silly audit }
+27 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1151ms
+28 silly audit report {}
+29 verbose cwd /data/data/com.termux/files/home/crashbot
+30 verbose os Linux 4.14.186-g398737f70064-dirty
+31 verbose node v24.9.0
+32 verbose npm  v11.6.0
+33 verbose exit 0
+34 info ok

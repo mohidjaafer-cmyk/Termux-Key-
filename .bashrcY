@@ -1,0 +1,1 @@
+cd ~/pyramid-site && nohup python -m http.server 8081 &

@@ -1,0 +1,29 @@
+{
+	"telemetryDisabled": false,
+	"cliId": "008935ae-c8d8-4681-a12c-aa8b3ef26105",
+	"userId": "68ee63223dd5e93ee095ec38",
+	"users": {
+		"68ee65bd3e672d4a47505cfc": {
+			"id": "68ee65bd3e672d4a47505cfc",
+			"name": null,
+			"email": "mohidjaafer@gmail.com",
+			"auth": {
+				"token": "nfc_zYaeYWaL85WtcPf9kXxvxhG1URKmYJ9n2122",
+				"github": {}
+			}
+		},
+		"68ee63223dd5e93ee095ec38": {
+			"id": "68ee63223dd5e93ee095ec38",
+			"name": null,
+			"email": "maxstel465@gmail.com",
+			"auth": {
+				"token": "nfc_HRA7XuKxcZjEEGECCj2WT83txVJaAtvz719d",
+				"github": {
+					"user": "mohidjaafer-cmyk",
+					"token": "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",
+					"provider": "github"
+				}
+			}
+		}
+	}
+}

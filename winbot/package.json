@@ -1,0 +1,10 @@
+{
+  "name": "winbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "telegraf": "^4.16.3"
+  }
+}

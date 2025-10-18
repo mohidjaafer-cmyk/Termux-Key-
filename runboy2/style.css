@@ -1,0 +1,39 @@
+body {
+  margin:0;
+  font-family:"Noto Kufi Arabic",Arial,sans-serif;
+  background:linear-gradient(180deg,#041226,#071226);
+  color:#e6eef6;
+  display:flex;
+  justify-content:center;
+}
+.container{
+  max-width:400px;
+  width:95%;
+  margin:20px auto;
+  padding:10px;
+  text-align:center;
+}
+.brand{
+  font-size:26px;
+  color:#00e6d4;
+  margin-bottom:20px;
+  font-weight:bold;
+}
+canvas{
+  background:#081728;
+  border-radius:10px;
+}
+button{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border:none;
+  border-radius:8px;
+  background:#00e6d4;
+  color:#001820;
+  cursor:pointer;
+  font-weight:700;
+}
+.score-board p{
+  margin:5px 0;
+}

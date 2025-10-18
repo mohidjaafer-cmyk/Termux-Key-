@@ -1,0 +1,6 @@
+body{margin:0;font-family:"Noto Kufi Arabic",Arial,sans-serif;background:#071226;color:#e6eef6;display:flex;justify-content:center;}
+.container{max-width:400px;width:95%;margin:20px auto;text-align:center;}
+.brand{font-size:26px;color:#00e6d4;font-weight:bold;margin-bottom:10px;}
+canvas{background:#081728;border:1px solid #00e6d4;border-radius:10px;display:block;margin:10px auto;}
+.score-board{margin:10px 0;}
+button{padding:10px 14px;border:none;border-radius:6px;background:#00e6d4;color:#001820;font-weight:700;cursor:pointer;width:100%;}

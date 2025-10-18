@@ -1,0 +1,17 @@
+{
+  "players": [
+    {
+      "id": "6870170976",
+      "balance": 0
+    }
+  ],
+  "bets": {},
+  "ownerBalance": 0,
+  "round": {
+    "running": false,
+    "multiplier": 8.7,
+    "crashAt": 8.65,
+    "startedAt": 1760577782960,
+    "chatId": 6870170976
+  }
+}
